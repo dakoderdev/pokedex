@@ -102,7 +102,7 @@ function renderAbilities(abilities: string[]) {
 function renderTypes(types: { name: string; label: string }[]) {
   let spans = "";
   types.map((t) => {
-    spans += `<span class="text-sm capitalize text-white rounded-full py-0.5 px-4 font-medium shadow-sm inset-ring inset-ring-white/30" style="background:${getTypeColor(t.name)}">${t.label}</span>`;
+    spans += `<span class="text-sm capitalize text-white rounded-full py-0.5 px-4 font-medium inset-ring inset-ring-white/30" style="background:${getTypeColor(t.name)}">${t.label}</span>`;
   });
   return `<div class="flex flex-wrap gap-1 mb-4">${spans}</div>`;
 }
