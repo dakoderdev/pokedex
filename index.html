@@ -3,42 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Basic&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="shortcut icon" href="imagenes/ojos.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Basic&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
     <title>Pokedex</title>
   </head>
   <body class="bg-neutral-900 text-white">
     <main class="max-w-5xl mx-auto p-6">
-      
       <h1 class="text-6xl font-bold mb-6 text-center">Pokedex</h1>
 
       <div class="mb-6 flex justify-center gap-2">
-        <input 
-          id="searchInput"
-          type="text"
-          placeholder="Buscar Pokémon..."
-          class="w-full max-w-sm px-4 py-2 rounded-lg bg-neutral-800 outline-none"
-        />
-        <button 
-          id="searchBtn"
-          class="px-4 py-2 bg-rose-600 rounded-lg"
-        >
-          Buscar
-        </button>
+        <input id="searchInput" type="text" placeholder="Buscar Pokémon..." class="w-full max-w-sm px-4 py-2 rounded-lg bg-neutral-800 outline-none" />
+        <button id="searchBtn" class="px-4 py-2 bg-rose-600 rounded-lg">Buscar</button>
       </div>
 
-
-      <div id="pokemonContainer" class="flex flex-col items-center mx-auto bg-red-500 border-3 border-[#33363B] gap-4 rounded-3xl w-full max-w-xl p-4">
-    <img 
-        src="/imagenes/ojos.png" 
-        alt="Ojos de Rotom"
-        class="w-35 h-16 object-cover"
-      />
-    </div>
-
+      <div class="flex flex-col items-center mx-auto bg-red-500 border-3 border-[#33363B] rounded-3xl w-full max-w-2xl p-4">
+        <img src="/imagenes/ojos.png" loading="eager" alt="Ojos de Rotom" class="w-35 h-16 object-cover" />
+        <div id="pokemonContainer" class="w-full"></div>
+      </div>
     </main>
 
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
-
